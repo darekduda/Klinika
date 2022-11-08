@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Klinika.Intranet.Data;
+using Klinika.Data.Data;
 
 namespace Klinika.Intranet
 {
@@ -27,8 +27,8 @@ namespace Klinika.Intranet
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<KlinikaIntranetContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("KlinikaIntranetContext")));
+            services.AddDbContext<KlinikaContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("KlinikaContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Klinika.Intranet.Data;
-using Klinika.Intranet.Models.CMS;
+using Klinika.Data.Data;
+using Klinika.Data.Data.CMS;
 
 namespace Klinika.Intranet.Controllers
 {
     public class KontaktController : Controller
     {
-        private readonly KlinikaIntranetContext _context;
+        private readonly KlinikaContext _context;
 
-        public KontaktController(KlinikaIntranetContext context)
+        public KontaktController(KlinikaContext context)
         {
             _context = context;
         }
