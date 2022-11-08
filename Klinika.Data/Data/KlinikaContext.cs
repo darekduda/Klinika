@@ -19,5 +19,8 @@ namespace Klinika.Data.Data
         public DbSet<Klinika.Data.Data.CMS.Kontakt> Kontakt { get; set; }
 
         public DbSet<Klinika.Data.Data.CMS.Parametry> Parametry { get; set; }
+        public DbSet<Klinika.Data.Data.Acount.Role> Role { get; set; }
+        public DbSet<Klinika.Data.Data.Acount.User> User { get; set; }
+
     }
 }
