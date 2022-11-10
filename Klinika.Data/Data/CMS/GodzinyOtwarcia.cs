@@ -22,7 +22,7 @@ namespace Klinika.Data.Data.CMS
 
         [Required(ErrorMessage = "Wpisz do której w dany dzień czynny jest gabinet")]
         [MaxLength(12, ErrorMessage = "Godzina otwarcia powinna zawierać maksymalnie 12 znaków")]
-        [Display(Name = "Godzina otwarcia Do")]
+        [Display(Name = "Godzina otwarcia do")]
         public string GodzinaOtwarciaDo { get; set; }
 
         [Required(ErrorMessage = "Wpisz pozycję na ktorej ma być wyświetlony")]
