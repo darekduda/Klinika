@@ -4,14 +4,16 @@ using Klinika.Data.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Klinika.Data.Migrations
 {
     [DbContext(typeof(KlinikaContext))]
-    partial class KlinikaContextModelSnapshot : ModelSnapshot
+    [Migration("20221110105740_addAktualnosci")]
+    partial class addAktualnosci
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

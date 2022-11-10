@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Klinika.Data.Data.CMS.GodzinyOtwarcia>
+
+<div class="align-items-center d-none d-md-flex">
+    <i class="bi bi-clock"></i> Poniedziałek - Sobota, 8:00 - 20:00
+    @foreach (var item in Model)
+    {
+        <i class="bi bi-clock"></i><i>@item.Dzien</i><i>@item.GodzinaOtwarciaOd</i><i>:</i><i>@item.GodzinaOtwarciaDo</i>
+    }
+</div>
